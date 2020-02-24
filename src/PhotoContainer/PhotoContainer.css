@@ -1,0 +1,15 @@
+﻿
+.photocontainer{
+    justify-content: center;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sizeclass{
+    margin-left: 1em ;
+    margin-bottom: 1em ;
+    height:15em;
+    width:15em;
+
+}

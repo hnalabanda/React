@@ -1,26 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {PhotoViewer,CurrentURL} from "./PhotoViewer/PhotoViewer";
+import {ImageUrls} from "./data";
+import {PhotoContainer} from "./PhotoContainer/PhotoContainer";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    // const images = [];
+    //
+    //
+    // for (let i = 0; i < ImageUrls.length; i++){
+    //     images.push(<PhotoViewer imgUrl={ImageUrls[i]}/>)
+    // 
+        
+    
+    return (
+        <div >
+            <h1>React Photo Viewer</h1>
+            <PhotoContainer/>
+        </div>
+    );
 }
 
 export default App;
