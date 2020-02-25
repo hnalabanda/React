@@ -20,7 +20,7 @@ function App() {
         <div >
             <h1>React Photo Viewer</h1>
             <PhotoViewer src={selectedImage}/>
-         {<PhotoContainer setSelectedImage={setSelectedImage}/>}
+         <PhotoContainer setSelectedImage={setSelectedImage}/>
         </div>
     );
 }
