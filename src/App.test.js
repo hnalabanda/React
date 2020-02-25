@@ -24,7 +24,12 @@ test('does not include broken images', () => {
     var brokenLinks=false;
     var imageNumberString;
     
-  for(let i=0;i<brokenImages.length;i++){
+    
+    expect(ImageUrls).not.toContain("https://i.picsum.photos/id/601/1600/900.jpg");
+    expect(ImageUrls).not.toContain("https://i.picsum.photos/id/624/1600/900.jpg");
+    expect(ImageUrls).not.toContain("https://i.picsum.photos/id/632/1600/900.jpg");
+    
+ /* for(let i=0;i<brokenImages.length;i++){
       imageNumberString = `6${brokenImages[i].toString().padStart(2, '0')}`;
      
       for(let c=0;c<ImageUrls.length;c++){
@@ -32,6 +37,7 @@ test('does not include broken images', () => {
           if(ImageUrls[c].includes(imageNumberString)) {
               brokenLinks=true;
               break;
+          }
           }
      
       }
@@ -41,7 +47,7 @@ test('does not include broken images', () => {
   }
    
 
-    expect(brokenLinks).toBe(false);
+    expect(brokenLinks).toBe(false);*/
 });
 
 
